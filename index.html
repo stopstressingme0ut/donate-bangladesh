@@ -18,12 +18,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+     <!-- Font Awesome cdn -->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">  
+
 </head>
 <body class="lexend-font">
     <header class="sticky top-0 ">
         <div class="bg-[#F9F7F3] pb-7">
             <!-- NavBar Starts Here -->
-            <nav class="mx-auto flex justify-between items-center py-5 w-11/12 lg:w-4/5 ">
+            <nav class="mx-auto flex justify-between items-center py-4 w-11/12 lg:w-4/5 ">
                 <div><a href="" class="px-6 py-2.5 text-lg font-semibold rounded-xl bg-[#B4F461]">Blog</a></div>
                 <div class="flex items-center gap-3">
                     <img src="./assets/logo.png" alt="Help with money picture" class=" w-10 h-11">
@@ -36,7 +39,7 @@
                 </div>
             </nav>
         </div>
-        <div class="backdrop-blur-sm mx-auto flex justify-center items-center gap-4 pt-5 lg:pt-16">
+        <div class="backdrop-blur-sm mx-auto flex justify-center items-center gap-4 pt-5 lg:pt-5">
             <div>
                 <button class="text-black text-lg font-bold bg-[#B4F461] rounded-xl px-5 py-4 ">Donation</button>
             </div>
@@ -46,12 +49,72 @@
         </div>
     </header>
 
-    <main>
+    <main class="mx-auto w-11/12 lg:w-4/5">
+        <!-- card-1  -->
+        <div class="container p-5 gap-8 flex flex-col lg:flex-row border-2 rounded-xl mt-4 lg:mt-10">
+            <div class="w-full lg:w-1/2 bg-center bg-no-repeat rounded-md">
+                <img src="./assets/noakhali.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4 lg:w-1/2 items-start">
+                <div class="flex items-center font-semibold bg-[#1111110D] rounded-lg gap-2 px-3 py-1 ">
+                    <img src="./assets/coin.png" alt="coin">
+                    <span>0</span>
+                    <span>BDT</span>
+                </div>
+                <h1 class="text-black font-bold text-xl">Donate for Flood at Noakhali,Bangladesh</h1>
+                <p class="font-light">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
+                <input class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="amount" placeholder="Write Donation Amount">
+                <button class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
+            </div>
+
+        </div>
+        <!-- card-2  -->
+        <div class="container p-5 gap-8 flex flex-col lg:flex-row border-2 rounded-xl mt-4 lg:mt-10">
+            <div class="w-full lg:w-1/2 bg-center bg-no-repeat rounded-md">
+                <img src="./assets/feni.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4 lg:w-1/2 items-start">
+                <div class="flex items-center font-semibold bg-[#1111110D] rounded-lg gap-2 px-3 py-1 ">
+                    <img src="./assets/coin.png" alt="coin">
+                    <span>0</span>
+                    <span>BDT</span>
+                </div>
+                <h1 class="text-black font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h1>
+                <p class="font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+
+                <input class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="amount" placeholder="Write Donation Amount">
+                <button class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
+            </div>
+
+        </div>
+
+        <!-- card-3  -->
+        <div class="container p-5 gap-8 flex flex-col lg:flex-row border-2 rounded-xl mt-4 lg:mt-10">
+            <div class="w-full lg:w-1/2 bg-center bg-no-repeat rounded-md">
+                <img src="./assets/quota-protest.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4 lg:w-1/2 items-start">
+                <div class="flex items-center font-semibold bg-[#1111110D] rounded-lg gap-2 px-3 py-1 ">
+                    <img src="./assets/coin.png" alt="coin">
+                    <span>0</span>
+                    <span>BDT</span>
+                </div>
+                <h1 class="text-black font-bold text-xl">Aid for Injured in the Quota Movement</h1>
+                <p class="font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+
+                <input class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="amount" placeholder="Write Donation Amount">
+                <button class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
+            </div>
+
+        </div>
+      
     </main>
-
-    <footer>
-
+    <footer class="mx-auto w-11/12 lg:w-4/5 mt-5 lg:mt-5">
+        <hr>
+        <aside class="pb-10 pt-2 text-center">
+            <p class="text-background  font-[500]"><i class="fa-solid fa-code" style="color: #48ff00;"></i>  with <i class="fa-solid fa-heart" style="color: #ff0000;"></i>  By Rafi Ahmed - All rights are reserved</a></p>
+          </aside>
     </footer>
     
 </body>

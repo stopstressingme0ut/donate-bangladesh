@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="./style/styles.css">
+     <link rel="shortcut icon" href="./assets/BDmap.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Daisy UI and Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- Font Awesome cdn -->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">  
+
+</head>
+<body class="lexend-font">
+    <header class="sticky top-0 ">
+        <div class="bg-[#F9F7F3] pb-7">
+            <!-- NavBar Starts Here -->
+            <nav class="mx-auto flex justify-between items-center py-4 w-11/12 lg:w-4/5 ">
+                <div><a href="index.html" class="px-6 py-2.5 text-lg font-semibold rounded-xl bg-[#B4F461]">Home</a></div>
+                <div class="flex items-center gap-3">
+                    <img src="./assets/logo.png" alt="Help with money picture" class=" w-10 h-11">
+                    <h3 class="text-black font-bold lg:text-lg">Donate Bangladesh</h3>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <img src="./assets/coin.png" alt="Coin Picture" class="w-6 h-6">
+                    <p class="font-semibold text-[#111111B3]">5500</p>
+                    <p class="font-semibold text-[#111111B3]">BDT</p>
+                </div>
+            </nav>
+        </div>
+       
+    </header>
+
+    <div class="flex items-center mx-auto w-11/12 pt-5 lg:w-4/5">
+        <h1 class="font-bold text-3xl text-black lg:pt-8">Important FAQ</h1>
+        <i class="fa-solid fa-circle-question fa-2xl pl-2 lg:pt-8 lg:pl-2"></i>
+    </div>
+
+    <div class="mx-auto w-11/12 pt-5 lg:w-4/5 lg:gap-5">
+        <div class="collapse collapse-arrow border-2 mb-2">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">1. What is the DOM?</div>
+            <div class="collapse-content">
+              <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document as a tree of objects that can be manipulated with scripts like JavaScript.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border-2 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">2. What is the difference between the DOM and HTML?</div>
+            <div class="collapse-content">
+              <p>HTML is a markup language used to create web pages, whereas the DOM is the model that represents the structure of the document, allowing it to be dynamically accessed and manipulated via JavaScript or other languages.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border-2 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">3.What is event delegation?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique where a single event listener is attached to a parent element, and events that occur on child elements are handled through this listener. This is more efficient than adding individual listeners to multiple child elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border-2 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">4.What is innerHTML and when should it be used?</div>
+            <div class="collapse-content">
+              <p>innerHTML is a property that allows you to set or get the HTML content of an element. While it’s a convenient way to manipulate content, it can cause security issues like Cross-Site Scripting (XSS) if used improperly, especially when inserting user-generated content</p>
+            </div>
+          </div>
+    </div>
+
+   
+    <aside class="pb-10 pt-8 text-center">
+        <p class="text-background  font-[500]"><i class="fa-solid fa-code" style="color: #48ff00;"></i>  with <i class="fa-solid fa-heart" style="color: #ff0000;"></i>  By Rafi Ahmed - All rights are reserved</a></p>
+      </aside>
+
+</body>

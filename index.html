@@ -34,23 +34,24 @@
                 </div>
                 <div class="flex items-center gap-1.5">
                     <img src="./assets/coin.png" alt="Coin Picture" class="w-6 h-6">
-                    <p class="font-semibold text-[#111111B3]">5500</p>
+                    <p id="balance" class="font-semibold text-[#111111B3]">5500</p>
                     <p class="font-semibold text-[#111111B3]">BDT</p>
                 </div>
             </nav>
         </div>
         <div class="backdrop-blur-sm mx-auto flex justify-center items-center gap-4 pt-5 lg:pt-5">
             <div>
-                <button class="text-black text-lg font-bold bg-[#B4F461] rounded-xl px-5 py-4 ">Donation</button>
+                <button id="donationBtn" class="text-black text-lg font-bold bg-[#B4F461] rounded-xl px-5 py-4 ">Donation</button>
             </div>
             <div>
-                <button class="border-2 border-[#5a5858b3] text-[#111111B3] text-lg font-bold rounded-xl px-6 py-3">History</button>
+                <button id="historyBtn" class="border-2 border-[#5a5858b3] text-[#111111B3] text-lg font-bold rounded-xl px-6 py-3">History</button>
             </div>
         </div>
     </header>
 
-    <main class="mx-auto w-11/12 lg:w-4/5">
-        <!-- card-1  -->
+    <main >
+        <section id="donationPart" class="mx-auto w-11/12 lg:w-4/5">
+             <!-- card-1  -->
         <div class="container p-5 gap-8 flex flex-col lg:flex-row border-2 rounded-xl mt-4 lg:mt-10">
             <div class="w-full lg:w-1/2 bg-center bg-no-repeat rounded-md">
                 <img src="./assets/noakhali.png" alt="">
@@ -58,14 +59,14 @@
             <div class="flex flex-col gap-4 lg:w-1/2 items-start">
                 <div class="flex items-center font-semibold bg-[#1111110D] rounded-lg gap-2 px-3 py-1 ">
                     <img src="./assets/coin.png" alt="coin">
-                    <span>0</span>
+                    <span id="nk-balance">0</span>
                     <span>BDT</span>
                 </div>
-                <h1 class="text-black font-bold text-xl">Donate for Flood at Noakhali,Bangladesh</h1>
+                <h1 id="nk-title" class="text-black font-bold text-xl">Donate for Flood at Noakhali,Bangladesh</h1>
                 <p class="font-light">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-                <input class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="amount" placeholder="Write Donation Amount">
-                <button class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
+                <input id="nk-input" class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="" placeholder="Write Donation Amount">
+                <button id="nk-btn" class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
             </div>
 
         </div>
@@ -77,18 +78,17 @@
             <div class="flex flex-col gap-4 lg:w-1/2 items-start">
                 <div class="flex items-center font-semibold bg-[#1111110D] rounded-lg gap-2 px-3 py-1 ">
                     <img src="./assets/coin.png" alt="coin">
-                    <span>0</span>
+                    <span id="fe-balance">0</span>
                     <span>BDT</span>
                 </div>
-                <h1 class="text-black font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h1>
+                <h1 id="fe-title" class="text-black font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h1>
                 <p class="font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
 
-                <input class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="amount" placeholder="Write Donation Amount">
-                <button class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
+                <input id="fe-input" class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="" placeholder="Write Donation Amount">
+                <button id="fe-btn" class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
             </div>
 
         </div>
-
         <!-- card-3  -->
         <div class="container p-5 gap-8 flex flex-col lg:flex-row border-2 rounded-xl mt-4 lg:mt-10">
             <div class="w-full lg:w-1/2 bg-center bg-no-repeat rounded-md">
@@ -97,29 +97,27 @@
             <div class="flex flex-col gap-4 lg:w-1/2 items-start">
                 <div class="flex items-center font-semibold bg-[#1111110D] rounded-lg gap-2 px-3 py-1 ">
                     <img src="./assets/coin.png" alt="coin">
-                    <span>0</span>
+                    <span id="q-balance">0</span>
                     <span>BDT</span>
                 </div>
-                <h1 class="text-black font-bold text-xl">Aid for Injured in the Quota Movement</h1>
+                <h1 id="q-title" class="text-black font-bold text-xl">Aid for Injured in the Quota Movement</h1>
                 <p class="font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
 
-                <input class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="amount" placeholder="Write Donation Amount">
-                <button class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
+                <input id="q-input" class="w-full p-5 rounded-lg py-2.5 border-2" type="number" name="" placeholder="Write Donation Amount">
+                <button id="quota-btn" class="w-full p-3 font-semibold text-xl  bg-[#B4F461] rounded-lg hover:bg-[#b9dfa3ad]">Donate Now</button>
             </div>
 
         </div>
-      <!-- History part -->
-      <div id="historyDiv" class="hidden">
-        <div class="container mx-auto">
-          <div>
-            <H1 class="text-2xl font-bold mt-10">Donation History</H1>
-            <div></div>
-          </div>
-          <div id="historyContainer">
 
-          </div>
+        </section>
+       
+      <!-- History part -->
+      <section  id="historyPart" class="mt-10 w-4/5 mx-auto hidden">
+        <div id="history-sec" class="flex flex-col gap-4">
+            
         </div>
-      </div>
+     </section>
+     
     </main>
     <footer class="mx-auto w-11/12 lg:w-4/5 mt-5 lg:mt-5">
         <hr>
@@ -129,8 +127,20 @@
     </footer>
     
     <!-- Modals -->
-    <main>
-        
-    </main>
+    <dialog id="modal1" class="modal">
+        <div class="modal-box flex flex-col items-center text-center gap-2 ">
+            <h2 class="text-2xl font-bold text-black">Congratulations!</h2>
+            <img src="./assets/coin.png" alt="" class="w-12 h-12">
+            <p class="py-3">You have donated for humankind</p>
+            <h3 class="text-xl text-black font-bold">Successfully!</h3>
+            <div class="modal-action justify-center">
+            <form method="dialog">
+                <button class="btn">Close Confirmation</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+    <script src="./js/index.js"></script>
+    <script src="./js/utilities.js"></script>
 </body>
 </html>
